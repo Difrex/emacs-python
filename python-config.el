@@ -1,6 +1,6 @@
 ;;; python-config.el --- Configure python mode
 ;;; Commentary:
-;; Configure basic parameters like linum and filesize
+;; Configure python completion
 ;;; Code:
 
 ;; Python mode hook
