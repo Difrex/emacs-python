@@ -30,8 +30,11 @@
         (setq-default fill-column 99)
         (setq fci-rule-width 1)
         (setq fci-rule-color "#696969"))
-
     (fci-mode)
+
+    (use-package flycheck-pyflakes
+        :config
+        (setq flychek-flake8-maximum-line-lenght 99))
 
     (anaconda-mode +1)
     (company-mode)
