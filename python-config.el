@@ -42,8 +42,7 @@
     "Install and configure python packages."
     ;; We use company for completion
     (use-package company)
-    (use-package company-capf)
-    (use-package anaconda-eldoc-mode)
+    (use-package anaconda-mode)
     (use-package company-anaconda
         :config
         (add-to-list 'company-backends '(company-anaconda :with company-capf)))
@@ -56,7 +55,7 @@
         :init
         (jedi:install-server)
         :config
-        (jedi:complete-on-dot t))
+        (setq jedi:complete-on-dot t))
 
     (use-package python
         :mode ("\\.py\\'" . python-mode)
