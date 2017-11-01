@@ -15,7 +15,7 @@ git clone https://github.com/Difrex/emacs-python ~/.emacs.d/config/python
 Add to your *init.el*:
 #+BEGIN_SRC
 (package-install use-package)
-(add-to-list 'load-path "~/.emacs.d/config/python"))
+(add-to-list 'load-path "~/.emacs.d/config/python")
 (require 'python-config)
 (configure-python-packages)
 #+END_SRC
@@ -27,4 +27,4 @@ That's all ;)
 - *C-c M-i* company-complete
 - *C-j* indent-new-comment-line
 - *M-j* electric-newline-and-maybe-indent
-- *M-,* anaconda-mode-go-back
+- *M-,** anaconda-mode-go-back
