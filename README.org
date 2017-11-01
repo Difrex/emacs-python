@@ -1,0 +1,30 @@
+* emacs-python
+
+Easy python mode configuration
+
+* Quick start
+
+Install required python packages: *autopep8*, *flake8* and *virtualenv*.
+
+Clone repository:
+#+BEGIN_SRC
+mkdir -p ~/.emacs.d/config
+git clone https://github.com/Difrex/emacs-python ~/.emacs.d/config/python
+#+END_SRC
+
+Add to your *init.el*:
+#+BEGIN_SRC
+(package-install use-package)
+(add-to-list 'load-path "~/.emacs.d/config/python"))
+(require 'python-config)
+(configure-python-packages)
+#+END_SRC
+
+That's all ;)
+
+* Key bindings
+
+- *C-c M-i* company-complete
+- *C-j* indent-new-comment-line
+- *M-j* electric-newline-and-maybe-indent
+- *M-,* anaconda-mode-go-back
